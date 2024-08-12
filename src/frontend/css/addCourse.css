@@ -1,0 +1,34 @@
+html{
+
+  font-size: 8px;
+}
+
+
+form{
+  
+  display: flex;
+  width:70vw;
+  flex-direction: row;
+  padding: 1rem;
+  background-color:green;
+  /*overflow-x: scroll;*/
+
+}
+
+
+input{
+
+  /*flex-basis: 0.25rem;*/
+  flex:1;
+  padding: 0.25rem;
+  border: 0.0175 dotted white;
+  width:8rem;
+
+}
+
+button{
+
+  background-color: yellow;
+  color: black;
+
+}

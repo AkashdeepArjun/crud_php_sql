@@ -1,0 +1,78 @@
+html{
+
+  font-size: 8px;
+}
+
+table{
+
+/*border: 0.25rem solid black;*/
+padding: 0.25rem;
+}
+
+tr.head{
+
+  font-style: bold;
+  text-decoration: underline;
+  background-color: palegreen;
+  border: 2rem solid black;
+  font-size:1rem;
+
+}
+
+td.titles{
+
+  padding:0.5rem;
+  text-align: center;
+
+}
+
+tr.enteries{
+
+  font-family: sans-serif;
+  font-size: 0.5rem;
+ 
+
+}
+
+td.error{
+
+  background-color: red;
+  color: white;
+  font-style: bold;
+
+}
+
+td{
+
+
+  /*border:0.125rem solid black;*/
+
+
+}
+
+td.edit{
+
+  text-decoration: underline;
+  color:blue;
+  cursor: pointer;
+
+
+}
+
+td.edit:hover{
+
+
+
+}
+
+input{
+
+  padding: 0.5rem;
+  font-size:0.5rem;
+}
+
+input:focus{
+
+  border: 0.075 solid green;
+}
+
