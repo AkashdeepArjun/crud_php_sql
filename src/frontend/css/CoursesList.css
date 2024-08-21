@@ -3,68 +3,61 @@ html{
   font-size: 8px;
 }
 
-table{
+/*td.edit:hover{*/
+/**/
+/**/
+/**/
+/*}*/
 
-/*border: 0.25rem solid black;*/
-padding: 0.25rem;
+
+body{
+
+
+  background-color:green;
 }
 
-tr.head{
+.table{
 
-  font-style: bold;
-  text-decoration: underline;
-  background-color: palegreen;
-  border: 2rem solid black;
-  font-size:1rem;
-
-}
-
-td.titles{
-
-  padding:0.5rem;
-  text-align: center;
-
-}
-
-tr.enteries{
-
-  font-family: sans-serif;
-  font-size: 0.5rem;
- 
+  background-color: #fdbedd;
+  margin-top:1rem;
+  display: inline-flex;
+  flex-flow: column;
+  padding: 0.25rem;
 
 }
 
-td.error{
 
-  background-color: red;
-  color: white;
-  font-style: bold;
+.titles{
+  
+  display: inline-flex;
+  flex-direction:row;
+  /*flex-direction: column;*/
+  background-color: #c0d369;
+  padding: 0.25rem;
+
+}
+.row{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: inherit;
+  padding:0.25rem ;
 
 }
 
-td{
 
 
-  /*border:0.125rem solid black;*/
 
 
+.titles>h2{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-right: 0.25rem solid black;
 }
 
-td.edit{
 
-  text-decoration: underline;
-  color:blue;
-  cursor: pointer;
-
-
+h2[class="last"]{
+  border:none;
 }
-
-td.edit:hover{
-
-
-
-}
-
 input{
 
   padding: 0.5rem;
@@ -73,6 +66,63 @@ input{
 
 input:focus{
 
-  border: 0.075 solid green;
+  border: 0.25 solid green;
 }
 
+h1{
+  font-size:3rem;
+  color:red;
+}
+
+/*.vishu{*/
+/**/
+/*  font-size:5rem;*/
+/*  color:blue;*/
+/*  background-color: #c0d369;*/
+/*}*/
+/**/
+/*.shikha{*/
+/**/
+/*  font-size:5rem ;*/
+/*  color:yellow;*/
+/*  background-color: black;*/
+/*  font-family: cursive;*/
+/*}*/
+
+
+.entry{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap:0.5rem;
+
+}
+
+form{
+
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  gap: 0.25rem;
+  margin-top:1rem;
+
+}
+
+input.del{
+
+  background-color:#800000 ;
+  color: white;
+  border:none;
+  filter:drop-shadow(0.5rem,0.5rem,0rem,black);
+
+
+}
+
+
+input.target_id{
+
+
+  /*visibility:collapse;*/
+
+  display: none;
+
+}

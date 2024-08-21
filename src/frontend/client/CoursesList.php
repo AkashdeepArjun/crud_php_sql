@@ -12,6 +12,8 @@ $stmt->execute();
 
 $res=$stmt->fetchall(PDO::FETCH_ASSOC);
 
+
+
 ?>
 
 
@@ -32,53 +34,55 @@ $res=$stmt->fetchall(PDO::FETCH_ASSOC);
   </head>
   <body>
 
+  
+  <div class="titles">
 
+    <h2>Code</h2>
+    <h2>Name</h2>
+    <h2>Info</h2>
+    <h2 class="last">Duration</h2>
 
-
-
-    <table>
+  
       
-      <thead>
-      
-        <tr class="head titles">
+</div>
 
-          <td>Code</td>
-          <td>Name</td>
-          <td>Info</td>
-          <td>Duration</td>
-
-
-        </tr>
-
-      </thead>
-
-      <tbody>
-       
-        /*OBJECTIVE:reload data once data is updated or deleted */
+<div class = "parent"> 
 
 <?php foreach($res as $row):?>
-  <tr>
 
-    <td>
-<input type="text" value=<?= htmlspecialchars($row['code']) ?>></input></td>
-    <td><input type="text" value=<?=htmlspecialchars($row['name']) ?>></input></td>
-    <td><input type="text" value=<?=htmlspecialchars($row['info']) ?>></input></td>
-    <td><input type="text" value=<?=htmlspecialchars($row['duration']) ?>></input></td>
-  <td class='edit'>Update</td>
-  <td class='edit'>Delete</td> 
+  <div class="entry">
 
-  </tr>
-</form>
+  <form method = 'post' action="http://localhost:3000/backend/update.php">
+  
+  <input type="text" name="code" value=<?=htmlspecialchars($row['code'])?>></input>
+  <input type="text" name="name" value=<?=htmlspecialchars($row['name'])?>></input>
+  <input type="text" name="info" value=<?=htmlspecialchars($row['info'])?>></input>
+  <input type="text" name="duration" value=<?=htmlspecialchars($row['duration'])?>></input>
+  <input type="submit" value="update"></input>
+
+
+  </form>
+
+  <form method='post' action="http://localhost:3000/backend/delete.php">
+    
+    <input type="text" value=<?=htmlspecialchars($row['code'])?> class="target_id" name="code" ></input> 
+    <input type="submit" value="delete" class="del"></input>
+
+
+  </form>
+
+
+
+</div>
 <?php endforeach ?>
-           
-          
+
+
+ 
+</div>
+
+
 
      
-
-      </tbody>
-
-
-    </table>    
   
   </body>
 </html>
