@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     exit();
     
     /*header("location:javascript://history.o(-1)");*/
-    echo "<h1>data deletion success </h1>";
+   echo "<h1>data deletion success </h1>";
   } catch (Exception $e) {
   
     echo "<script type=\"text/javascript\" >";
@@ -36,7 +36,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
 
     echo "<h1>".$e->getMessage()."</h1>";
+  
   }
+
 
 
 

@@ -31,7 +31,8 @@ try{
   /**/
   $stmt->execute();
   /**/
-  echo "<h1>added course successfully!!!</h1>";
+    echo "<h1>added course successfully!!!</h1>";
+    header("location:"."http://localhost:3000/frontend/client/CoursesList.php");
 
 }catch(Exception $e){
 

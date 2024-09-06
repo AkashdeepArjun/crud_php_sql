@@ -1,0 +1,41 @@
+html {
+
+  font-size: 8px;
+
+}
+
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 25vh;
+  background-color: #5ab437;
+  padding: 1rem;
+}
+
+input {
+
+  border-radius: 0.5rem;
+  transition: border 1s ease-in;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+
+.submit {
+
+  width: 8rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: purple;
+  color: white;
+
+}
+
+
+input:hover {
+
+  border: 0.5rem solid green;
+}
